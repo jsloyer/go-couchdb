@@ -94,7 +94,7 @@ func path(segs ...string) string {
 	r := ""
 	for _, seg := range segs {
 		r += "/"
-		r += url.QueryEscape(seg)
+		r += seg
 	}
 	return r
 }
